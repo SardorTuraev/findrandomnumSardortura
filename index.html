@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Find a number</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>  
+  
+  <div class="container">
+    <h2 class="text-center">Find a random number!</h2>
+    <h2 class="text-center">1 dan 100 gacha bo'lgan sonni kiring va tahminiy sonni toping!</h2>    
+    <form class="js-form form" id="formRandomNumber" action="https://echo.htmlacademy.ru" method="POST">
+      
+      <div class="row">       
+        <div class="col-md-6">
+          <input class="js-inputNumber form-control" type="number" name="input-number" required min="1" max="100">
+          <button class="btn btn-dark text-white w-100 my-2">Tekshirish</button>
+        </div>
+        
+        <div class="col-md-6">
+          <output class="form-control mb-2" id="outputRandomNumber"><span class="result-display"></span></output>
+          <span class="js-num-info text-dark" id="numInfo"></span>
+        </div>  
+      </div>
+    </form>  
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
