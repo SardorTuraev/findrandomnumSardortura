@@ -17,7 +17,7 @@ elForm.addEventListener('submit', function (evt) {
   var num = i;
 
   if (i == 0) {
-    elOutput.textContent = 'Afsus topa olmadingiz, imkoniyatingiz tugadi!';
+    elOutput.textContent = 'Ex, afsus yana bir marta o`ynab ko`ring!';
     elNumInfo.textContent = `Javob ${x} edi`;
   }
 
@@ -26,17 +26,19 @@ elForm.addEventListener('submit', function (evt) {
     elOutput.textContent = 'Kiritgan soningiz katta!';
     elNumInfo.textContent = 'Imkoniyatingiz ' + num + ' ta qoldi!';
   }
+
   else if (+elInputAmount.value < x) {
     --i;
     elOutput.textContent = 'Kiritgan soningiz kichik!';
     elNumInfo.textContent = 'Imkoniyatingiz ' + num + ' ta qoldi!';
   }
+
   else if (+elInputAmount.value === x) {
     --i;
-    elOutput.textContent = 'Tabriklaymiz, Topdingiz😎!';
+    elOutput.textContent = 'Topdiz-e, qoyil!😆';
     elNumInfo.textContent = '';
   }
 
   elInputAmount.value = '';
-
+  
 })
